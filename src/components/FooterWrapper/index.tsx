@@ -2,7 +2,7 @@ import { Footer } from 'flowbite-react'
 import { BsFacebook, BsGithub, BsInstagram, BsLinkedin } from 'react-icons/bs'
 
 const FooterWrapper = () => <Footer container className="rounded-none">
-    <div className="w-full">
+    <div className="container max-w-5xl mx-auto">
         <Footer.Divider />
         <div className="border-0 w-full px-4 py-6 sm:flex sm:items-center sm:justify-between">
             <Footer.Copyright href="#" by="Sumit Suresh Jadhav™" year={2024} />
