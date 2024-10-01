@@ -2,7 +2,7 @@ const Why = () => {
     return (
 
         <div className="p-4 text-gray-900 dark:text-gray-300">
-            <h3 className="text-2xl font-bold my-4">Why?</h3>
+            <h3 className="text-2xl font-bold my-4">Benefits</h3>
             <ul>
                 <li className="py-1"><b>Improved Quality:</b> Best practices help ensure that code is well-structured, reliable,
                     maintainable

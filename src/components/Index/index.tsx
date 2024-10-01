@@ -15,7 +15,7 @@ const Index = () => (
             <Sidebar.Items>
                 <Sidebar.ItemGroup>
                     <Sidebar.Item href="#" icon={HiQuestionMarkCircle}>
-                        Why?
+                        Introduction
                     </Sidebar.Item>
                     <Sidebar.Item href="#" icon={HiSwitchHorizontal}>
                         Process
