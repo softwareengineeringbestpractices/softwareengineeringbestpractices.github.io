@@ -1,20 +1,44 @@
-import { List } from 'flowbite-react'
-import { HiCheckCircle } from 'react-icons/hi'
+import { Sidebar } from 'flowbite-react'
+import {
+    HiBeaker,
+    HiChartBar,
+    HiCloud,
+    HiCode,
+    HiQuestionMarkCircle,
+    HiSwitchHorizontal,
+    HiViewBoards
+} from 'react-icons/hi'
 
-function Index() {
-    return (
-        <div className="w-64 px-4">
-            <List className="border-r-2">
-                <List.Item icon={HiCheckCircle} className="hover:underline hover:cursor-pointer">Why?</List.Item>
-                <List.Item icon={HiCheckCircle} className="hover:underline hover:cursor-pointer">Process</List.Item>
-                <List.Item icon={HiCheckCircle} className="hover:underline hover:cursor-pointer">Version Control</List.Item>
-                <List.Item icon={HiCheckCircle} className="hover:underline hover:cursor-pointer">Development</List.Item>
-                <List.Item icon={HiCheckCircle} className="hover:underline hover:cursor-pointer">Testing</List.Item>
-                <List.Item icon={HiCheckCircle} className="hover:underline hover:cursor-pointer">Deployment</List.Item>
-                <List.Item icon={HiCheckCircle} className="hover:underline hover:cursor-pointer">Observability</List.Item>
-            </List>
-        </div>
-    )
-}
+const Index = () => (
+    <div className="w-64 px-4 overflow-hidden">
+        <Sidebar aria-label="Default sidebar example">
+            <Sidebar.Items>
+                <Sidebar.ItemGroup>
+                    <Sidebar.Item href="#" icon={HiQuestionMarkCircle}>
+                        Why?
+                    </Sidebar.Item>
+                    <Sidebar.Item href="#" icon={HiSwitchHorizontal}>
+                        Process
+                    </Sidebar.Item>
+                    <Sidebar.Item href="#" icon={HiViewBoards}>
+                        Collaboration
+                    </Sidebar.Item>
+                    <Sidebar.Item href="#" icon={HiCode}>
+                        Development
+                    </Sidebar.Item>
+                    <Sidebar.Item href="#" icon={HiBeaker}>
+                        Testing
+                    </Sidebar.Item>
+                    <Sidebar.Item href="#" icon={HiCloud}>
+                        Deployment
+                    </Sidebar.Item>
+                    <Sidebar.Item href="#" icon={HiChartBar}>
+                        Observability
+                    </Sidebar.Item>
+                </Sidebar.ItemGroup>
+            </Sidebar.Items>
+        </Sidebar>
+    </div>
+)
 
 export default Index
