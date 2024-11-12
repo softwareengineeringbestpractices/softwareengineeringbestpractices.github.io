@@ -10,7 +10,7 @@ import {
 } from 'react-icons/hi'
 
 const Index = () => (
-    <div className="w-64 px-4 overflow-hidden">
+    <div className="w-64 overflow-hidden px-4">
         <Sidebar aria-label="Default sidebar example">
             <Sidebar.Items>
                 <Sidebar.ItemGroup>
