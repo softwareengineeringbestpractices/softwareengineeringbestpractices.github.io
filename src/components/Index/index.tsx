@@ -17,10 +17,10 @@ const Index = () => (
                     <Sidebar.Item href="#" icon={HiQuestionMarkCircle}>
                         Introduction
                     </Sidebar.Item>
-                    <Sidebar.Item href="#" icon={HiSwitchHorizontal}>
+                    <Sidebar.Item className="hidden" href="#" icon={HiSwitchHorizontal}>
                         Process
                     </Sidebar.Item>
-                    <Sidebar.Item href="#" icon={HiViewBoards}>
+                    <Sidebar.Item className="hidden" href="#" icon={HiViewBoards}>
                         Collaboration
                     </Sidebar.Item>
                     <Sidebar.Item href="#" icon={HiCode}>

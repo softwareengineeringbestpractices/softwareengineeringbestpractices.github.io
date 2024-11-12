@@ -14,11 +14,10 @@ export const Quote = () => (
         </svg>
         <Blockquote>
             <p className="text-2xl font-medium italic text-gray-700 dark:text-white">
-                &quot;Best practice is a procedure that has been shown by research and experience to produce optimal results
-                and that is established or proposed as a standard suitable for widespread adoption.&quot;
+                Best Practices refer to a set of guidelines, techniques, and principles that have been widely accepted within the industry to improve the quality, efficiency, and maintainability of software.
             </p>
         </Blockquote>
-        <figcaption className="mt-6 flex items-center justify-center space-x-3">
+        <figcaption className="mt-6 flex items-center justify-center space-x-3 hidden">
             <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                 <cite className="pr-3 font-medium text-gray-500 dark:text-white">Merriam Webster</cite>
             </div>
