@@ -8,7 +8,7 @@ on:
   pull_request:
     branches:
       - main  # Runs on PRs targeting the main branch
-  workflow_dispatch:  # Allows manual trigger for the workflow
+  workflow_dispatch:  # Allows manual trigger for the workflow (used in deploy job)
 
 jobs:
   # Job 1: Build
@@ -77,9 +77,7 @@ jobs:
         run: npm run build
 
       - name: Deploy to production
+        env:
+          DEPLOY_ENV: 'production'
+          # Add other environment variables like API keys, deploy secrets here
         run: npm run deploy
-
-  # Manual trigger for deploy phase
-  workflow_dispatch:
-    jobs:
-      - deploy
