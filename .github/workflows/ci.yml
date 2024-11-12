@@ -1,4 +1,4 @@
-name: CI/CD Pipeline
+name: CI Pipeline
 
 # Workflow triggers
 on:
@@ -8,7 +8,6 @@ on:
   pull_request:
     branches:
       - main  # Runs on PRs targeting the main branch
-  workflow_dispatch:  # Allows manual trigger for the workflow (used in deploy job)
 
 jobs:
   # Job 1: Build
@@ -56,28 +55,3 @@ jobs:
       - name: Run tests
         run: npm test -- --watchAll=false  # Run tests in CI mode
 
-  # Job 3: Deploy
-  deploy:
-    runs-on: ubuntu-latest
-    needs: test
-    if: github.ref == 'refs/heads/main'  # Ensure deploy only runs on main branch
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build application
-        run: npm run build
-
-      - name: Deploy to production
-        env:
-          DEPLOY_ENV: 'production'
-          # Add other environment variables like API keys, deploy secrets here
-        run: npm run deploy

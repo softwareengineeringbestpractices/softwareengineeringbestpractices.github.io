@@ -1,0 +1,27 @@
+name: CD Pipeline
+
+# Workflow triggers
+on:
+  workflow_dispatch:  # Allows manual trigger for the workflow (used in deploy job)
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'  # Ensure deploy only runs on main branch
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build application
+        run: npm run build
+
+      - name: Deploy to production
+        run: npm run deploy
