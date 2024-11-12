@@ -11,9 +11,9 @@ const HeaderWrapper = () => <div className="shadow">
             </Navbar.Brand>
             <Navbar.Toggle />
             <Navbar.Collapse>
-                <Navbar.Link href="/" active>Home</Navbar.Link>
-                <Navbar.Link href="/">About</Navbar.Link>
-                <Navbar.Link href="/">Contact</Navbar.Link>
+                <Navbar.Link className="hidden" href="/" active>Home</Navbar.Link>
+                <Navbar.Link className="hidden" href="/">About</Navbar.Link>
+                <Navbar.Link className="hidden" href="/">Contact</Navbar.Link>
                 <Navbar.Link href={'javascript:void(0);'}>
                     <DarkThemeToggle className="p-0" />
                 </Navbar.Link>
