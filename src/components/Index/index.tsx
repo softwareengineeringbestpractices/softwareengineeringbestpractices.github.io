@@ -14,7 +14,7 @@ const Index = () => (
         <Sidebar aria-label="Default sidebar example">
             <Sidebar.Items>
                 <Sidebar.ItemGroup>
-                    <Sidebar.Item href="#" icon={HiQuestionMarkCircle}>
+                    <Sidebar.Item href="" icon={HiQuestionMarkCircle}>
                         Introduction
                     </Sidebar.Item>
                     <Sidebar.Item className="hidden" href="#" icon={HiSwitchHorizontal}>
@@ -23,16 +23,16 @@ const Index = () => (
                     <Sidebar.Item className="hidden" href="#" icon={HiViewBoards}>
                         Collaboration
                     </Sidebar.Item>
-                    <Sidebar.Item href="#" icon={HiCode}>
+                    <Sidebar.Item href="#development-best-practices" icon={HiCode}>
                         Development
                     </Sidebar.Item>
-                    <Sidebar.Item href="#" icon={HiBeaker}>
+                    <Sidebar.Item href="#testing-best-practices" icon={HiBeaker}>
                         Testing
                     </Sidebar.Item>
-                    <Sidebar.Item href="#" icon={HiCloud}>
+                    <Sidebar.Item href="#deployment-best-practices" icon={HiCloud}>
                         Deployment
                     </Sidebar.Item>
-                    <Sidebar.Item href="#" icon={HiChartBar}>
+                    <Sidebar.Item href="#obervability-best-practices" icon={HiChartBar}>
                         Observability
                     </Sidebar.Item>
                 </Sidebar.ItemGroup>
